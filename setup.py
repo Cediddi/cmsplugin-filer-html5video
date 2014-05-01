@@ -14,12 +14,11 @@ def read(fname):
 
 setup(
     name = "cmsplugin-filer-html5video",
-    version = "0.1",
     url = 'https://github.com/piquadrat/cmsplugin-filer-html5video',
     license = 'BSD',
     description = "HTML5 video plugin for django CMS and django-filer, using VideoJS",
     long_description = read('README.rst'),
-    author = 'Benjamin Wohlwend',
+    author = 'Benjamin Wohlwend & Other Contributors',
     author_email = 'piquadrat@gmail.com',
     packages = find_packages(),
     install_requires = install_requires,
