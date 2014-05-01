@@ -5,7 +5,7 @@
 
 <video id="videojs_plugin_{{ object.pk }}" class="video-js vjs-default-skin" controls
        preload="auto" width="{{ object.width }}" height="{{ object.height }}" poster="{{ object.image.url }}"
-       data-setup="{}">
+       data-setup='{"techOrder": ["html5"]}'>
 	{% for format, url in formats.items %}
 		<source src="{{ url }}" type='{{ format }}'>
 	{% endfor %}
