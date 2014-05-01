@@ -12,9 +12,9 @@ class FilerHTML5Video(CMSPlugin):
     
     title = models.CharField(_('title'), blank=True, default='', max_length=100)
     
-    video_mp4  = FilerFileField(verbose_name=_('movie file (MP4)'), help_text=_('MP4 h264 encoded video file (Safari, Chrome, IE9)'), blank=True, null=True, related_name='+')
-    video_webm = FilerFileField(verbose_name=_('movie file (webM)'), help_text=_('webM encoded video file (Firefox)'), blank=True, null=True, related_name='+')
-    video_ogv = FilerFileField(verbose_name=_('movie file (ogv)'), help_text=_('ogv encoded video file (Firefox)'), blank=True, null=True, related_name='+')
+    video_mp4  = FilerFileField(verbose_name=_('movie file (MP4[H.264)'), help_text=_('MP4 encoded video file (Android3+, Chrome3+, Firefox26+, IE9+, iOS3+, Safari3.1+)'), blank=True, null=True, related_name='+')
+    video_webm = FilerFileField(verbose_name=_('movie file (webM[VP8])'), help_text=_('webM encoded video file (Android2.3+, Chrome6+, Firefox3.5+, Opera 10.60+)'), blank=True, null=True, related_name='+')
+    video_ogv = FilerFileField(verbose_name=_('movie file (ogv[Theora])'), help_text=_('ogv encoded video file (Android2.3+, Chrome3+, Firefox4+, Opera 10.50+ )'), blank=True, null=True, related_name='+')
     image = FilerImageField(verbose_name=_('image'), help_text=_('preview image file'), null=True, blank=True, related_name='+')
 
     width = models.PositiveSmallIntegerField(_('width'), default=plugin_settings.VIDEO_WIDTH)
