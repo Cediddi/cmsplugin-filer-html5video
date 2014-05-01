@@ -14,6 +14,7 @@ def read(fname):
 
 setup(
     name = "cmsplugin-filer-html5video",
+    version = "0.2",
     url = 'https://github.com/piquadrat/cmsplugin-filer-html5video',
     license = 'BSD',
     description = "HTML5 video plugin for django CMS and django-filer, using VideoJS",
